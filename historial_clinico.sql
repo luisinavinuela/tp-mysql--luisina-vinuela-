@@ -1,3 +1,4 @@
+--HISTORIAL CLINICO
 CREATE TABLE historial_clinico (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_mascota INT,
