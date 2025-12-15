@@ -1,4 +1,5 @@
 -- MODIFICAR FOREIG KEY
+
 -- MASCOTAS - DUEÑOS
 ALTER TABLE mascotas
 DROP FOREIGN KEY mascotas_ibfk_1;

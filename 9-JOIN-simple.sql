@@ -1,3 +1,4 @@
+-- JOIN SIMPLE
 SELECT 
     m.nombre AS nombre_mascota,
     m.especie,
