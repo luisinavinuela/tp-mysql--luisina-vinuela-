@@ -1,0 +1,22 @@
+-- MODIFICAR FOREIG KEY
+-- MASCOTAS - DUEÑOS
+ALTER TABLE mascotas
+DROP FOREIGN KEY mascotas_ibfk_1;
+
+ALTER TABLE mascotas
+ADD CONSTRAINT fk_dueno
+FOREIGN KEY (id_dueno) REFERENCES duenos(id)
+ON DELETE CASCADE;
+
+-- HISTORIAL CLINICO - MASCOTAS
+ALTER TABLE historial_clinico
+DROP FOREIGN KEY historial_clinico_ibfk_1;
+
+ALTER TABLE historial_clinico
+ADD CONSTRAINT fk_mascota
+FOREIGN KEY (id_mascota) REFERENCES mascotas(id)
+ON DELETE CASCADE;
+
+-- ELIMINAR MASCOTA 
+DELETE FROM mascotas
+WHERE id = 3
